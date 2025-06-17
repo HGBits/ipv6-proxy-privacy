@@ -147,4 +147,5 @@ PAL6 é um modelo simples, modular e eficaz que resolve as fragilidades centrais
 
 ---
 
-> Proposto por Henrique Gabriel © 2025 – Licenciado sob Creative Commons BY-SA.
+> Proposto por Henrique Gabriel © 2025 – Licenciado sob Creative Commons Attribution 4.0 International (CC BY 4.0).
+> 
