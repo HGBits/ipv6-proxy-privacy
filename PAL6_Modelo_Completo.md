@@ -133,6 +133,25 @@ PAL6 é compatível com:
 
 ---
 
+## Integração com Roteadores e Provedores
+
+A arquitetura PAL6 pode ser implementada nativamente em **roteadores residenciais ou comerciais**, eliminando a necessidade de dispositivos externos para atuar como relay local.
+
+### Benefícios da integração direta:
+- **Sem configuração manual**: o roteador assume automaticamente a função de relay.
+- **Privacidade plug-and-play**: o tráfego IPv6 é redirecionado via um servidor unificado, ocultando o IP real do cliente.
+- **Desempenho otimizado**: com suporte a cache, compressão e roteamento inteligente.
+- **Diferencial de mercado**: ISPs podem oferecer o PAL6 como recurso de “modo privacidade avançada”.
+
+### Implementações possíveis:
+- Firmwares como **OpenWRT** podem incluir suporte ao PAL6 nativamente.
+- Provedores podem operar seus próprios **servidores de retransmissão** (ou federar com redes confiáveis).
+- É possível adaptar a solução para funcionar de forma híbrida com **fallback para IPv4**, quando necessário.
+
+Essa integração representa um avanço estratégico para devolver aos usuários o controle sobre suas conexões em redes IPv6 — com simplicidade, desempenho e segurança.
+
+---
+
 ## 🧩 Considerações finais
 
 - O modelo é **teoricamente compatível também com IPv4**, mas com utilidade reduzida nesse cenário, já que o NAT tradicional cobre muitas dessas lacunas.
