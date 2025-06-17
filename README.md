@@ -2,7 +2,7 @@
 [![Licença: CC BY 4.0](https://img.shields.io/badge/Licença-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 Arquitetura PAL6: um modelo de privacidade para IPv6 com retransmissão local e nó de saída unificado, pensado para restaurar o anonimato e o controle sobre o tráfego.
 
-ipv6-proxy-pruvacy:
+ipv6-proxy-privacy:
 [Doc](PAL6_Modelo_Completo.md)
 
 ipv6-web3:
