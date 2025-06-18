@@ -203,3 +203,57 @@ Você está numa rede 100% IPv6 e quer acessar um site IPv4. O NAT64 intercepta 
 > O outro de **estrutura de endereçamento**.
 
 Não confunda! 😉
+
+
+### (3.5) ❓ Como o IPv6 pode ser usado para rastrear meu dispositivo?
+
+Embora o IPv6 tenha sido projetado para melhorar o roteamento e escalabilidade da internet, ele introduz um novo vetor de rastreamento:
+
+---
+
+### 🔍 O problema: endereços IPv6 persistentes
+
+Cada endereço IPv6 é composto por duas partes:
+- **Prefixo de rede (/64):** fornecido pelo seu provedor ou roteador.
+- **Identificador de host:** normalmente gerado com base no **MAC address** do dispositivo.
+
+Quando isso ocorre:
+- Seu endereço IPv6 se torna **único e estático**.
+- Mesmo mudando de rede, seu dispositivo pode ser **reconhecido e rastreado**.
+
+---
+
+### 🧠 Exemplo prático
+
+Imagine que seu celular usa o mesmo identificador de host IPv6 em casa, no trabalho e em redes públicas.  
+Um servidor que recebe esses IPs pode perceber que:
+- **É o mesmo dispositivo.**
+- **Está se movendo por locais diferentes.**
+- **Possivelmente pertence à mesma pessoa.**
+
+---
+
+### 🛡️ A solução: Privacy Extensions
+
+O IPv6 possui uma funcionalidade chamada **Privacy Extensions (RFC 4941)**:
+- Gera aleatoriamente a parte final do endereço IPv6.
+- Impede o vínculo direto com o MAC address.
+- Pode rotacionar o endereço periodicamente.
+
+> ⚠️ **Nem todos os sistemas ativam isso por padrão.**  
+> Em alguns casos, você precisa configurar manualmente no sistema operacional.
+
+---
+
+### ✅ Resumo
+
+| Situação                     | Risco de rastreamento |
+|-----------------------------|------------------------|
+| IPv6 com MAC embutido       | Alto                  |
+| IPv6 com Privacy Extensions | Baixo                 |
+| IPv4 com NAT                | Moderado              |
+
+---
+
+**PAL6**, por sua vez, **evita essa exposição** ao introduzir um relay que **desvincula o IP de saída do dispositivo real**, protegendo a identidade do usuário por padrão.
+
