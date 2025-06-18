@@ -10,7 +10,7 @@ Perguntas e Respostas: [FAQ](FAQ.md)
 ## Outras utilidades para esse modelo.
 ipv6-web 3.0:
 [Doc](pal6_web3_applications.md),
-Geopolítica, Descentralização e Faq: [Doc](pal6_geopolitica.md)
+Geopolítica e Descentralização: [Doc](pal6_geopolitica.md)
 
 ## O que é IPv4 e IPv6?
 
