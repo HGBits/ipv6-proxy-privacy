@@ -4,6 +4,7 @@ Arquitetura PAL6: um modelo de privacidade para IPv6 com retransmissão local e 
 
 ipv6-proxy-privacy:
 [Doc](PAL6_Modelo_Completo.md)
+
 Perguntas e Respostas: [FAQ](FAQ.md)
 
 ## Outras utilidades para esse modelo.
