@@ -156,6 +156,55 @@ O PAL6 **não precisa de uma VPN tradicional** porque já oferece:
 Se você quiser, **pode integrar uma VPN no próprio relay**, tornando-a invisível e opcional.  
 **Você escolhe.**
 
+### (2.5)❓ PAL6 não é só mais um proxy ou Tor?
+
+Essa é uma dúvida comum, mas vamos esclarecer:
+
+---
+
+### 🔄 Comparando soluções
+
+| Tecnologia | Privacidade | Velocidade | Controle | Uso geral |
+|------------|-------------|------------|----------|-----------|
+| Proxy      | Baixa       | Alta       | Nenhum   | Parcial   |
+| VPN        | Média       | Alta       | Terceiro | Sim       |
+| Tor        | Alta        | Baixa      | Externo  | Parcial   |
+| **PAL6**   | Alta        | Alta       | Usuário  | Sim       |
+
+---
+
+### 🧠 Explicando:
+
+#### 🧩 Proxy
+- Apenas redireciona tráfego.
+- Sem criptografia embutida.
+- Provedor pode logar tudo.
+
+#### 🛡️ VPN
+- Fornece criptografia ponto-a-ponto.
+- Exige confiança no provedor.
+- Centraliza tudo numa só saída.
+
+#### 🧅 Tor
+- Anonimato forte via múltiplos nós.
+- Muito lento para uso geral.
+- Ideal apenas para navegação web e apps compatíveis.
+
+#### 🚀 PAL6
+- Criptografia e mascaramento **nativos**.
+- Permite usar **relay próprio ou comunitário**.
+- Alta compatibilidade com IPv6 e velocidade P2P.
+- Pode ser integrado no roteador, Raspberry Pi ou VPS.
+
+---
+
+### ✅ Em resumo
+
+PAL6 **não depende de terceiros** e foi projetado para:
+- Funcionar com qualquer serviço.
+- Manter privacidade como padrão, não opção.
+- Evitar latência extrema como no Tor.
+- Ser **configurável, auditável e replicável** por qualquer um.
 
 ### (3) Diferença entre NAT64 e Prefixo /64 no IPv6
 
@@ -256,4 +305,40 @@ O IPv6 possui uma funcionalidade chamada **Privacy Extensions (RFC 4941)**:
 ---
 
 **PAL6**, por sua vez, **evita essa exposição** ao introduzir um relay que **desvincula o IP de saída do dispositivo real**, protegendo a identidade do usuário por padrão.
+
+### (4) 🛡️ “Sistema atualizado resolve tudo”... Será?
+
+### ❌ Errado por simplificação. Vamos por partes:
+
+---
+
+### 🔥 Firewalls e privacy extensions ajudam, mas:
+
+- **Privacy Extensions (RFC 4941)** rotacionam o endereço temporário, **não o prefixo /64**, que continua fixo por default.
+- Esse prefixo **ainda identifica sua rede local ou roteador**, tornando rastreio inter-redes viável.
+- Firewalls bloqueiam entrada, **mas não mascaram saída** — que é onde mora o problema de exposição no IPv6.
+
+---
+
+### 🌐 IPv4 com CGNAT ≠ IPv6 direto
+
+| Aspecto             | IPv4 + CGNAT                     | IPv6 Padrão                        |
+|---------------------|----------------------------------|------------------------------------|
+| IP público único    | Compartilhado (por NAT)          | Exclusivo por dispositivo          |
+| Rastreabilidade     | ISP precisa logar portas         | Rastreável direto via prefixo      |
+| Privacidade local   | NAT isola sua rede               | Dispositivos ficam “visíveis”      |
+
+- No **CGNAT**, a operadora *é obrigada* a manter logs, mas isso **dificulta rastreio casual**.
+- No **IPv6 padrão**, seu tráfego sai já “carimbado”, a menos que algo como **PAL6 ou VPN** esteja entre você e o mundo.
+
+---
+
+### ✅ PAL6 entra como solução por quê?
+
+Porque **não confia só em medidas defensivas** do sistema. Ele:
+
+- Cria uma **camada extra de abstração** (relay local + mascaramento).
+- Funciona **em cima de IPv6 nativo**, sem depender de CGNAT nem extensões.
+- Pode ser controlado **pelo próprio usuário**, sem delegar à operadora.
+
 
