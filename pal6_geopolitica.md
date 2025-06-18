@@ -67,3 +67,30 @@ O efeito disso é uma rede com as seguintes propriedades:
 - Elimina a dependência de **infraestruturas monopolizadas**
 
 > **O resultado:** um IPv6 mais próximo da visão original da internet — descentralizado, transparente e seguro para o usuário final.
+
+## ❓ FAQ: Comparações Comuns
+
+### (1) “Não é mais fácil subir um VPS com WireGuard e pronto?”
+
+**Resposta:**  
+Não. Embora útil, isso **não entrega o mesmo nível de controle, anonimato e descentralização** que o PAL6 propõe. Aqui está o porquê:
+
+#### 🔁 IP fixo vs. IP rotativo
+- Um VPS tem um IP fixo, **fácil de rastrear ou bloquear**.
+- O PAL6 permite **relays efêmeros**, rotativos, até temporários como Snowflake.
+
+#### 🕵️ WireGuard = túnel criptografado, **mas identificável**
+- Seu IP real ainda chega no VPS, **ligando você ao tráfego**.
+- Com o PAL6, **o IP real nunca sai da sua rede local**. O relay faz a entrega.
+
+#### 🛜 Infraestrutura flexível
+- VPS exige conta, cartão, setup técnico.
+- PAL6 funciona com Raspberry Pi, roteadores customizados, plugins no navegador, bots ou redes mesh.
+
+#### 🌐 Modelo P2P e escalável
+- WireGuard é ponto a ponto fixo.
+- PAL6 permite **redes espontâneas, comunitárias, adaptáveis**, com relays múltiplos.
+
+**Resumo:**  
+Subir um VPS é útil — mas **não é o mesmo que implementar PAL6**.  
+O PAL6 é um **modelo arquitetônico para entregar privacidade, anonimato e liberdade** desde a origem da conexão, usando IPv6 sob os próprios termos do usuário.
