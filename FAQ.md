@@ -3,7 +3,8 @@
 
 ### e por que é dessa forma?: 
 
-O objetivo disto é evitar atrelar a sua máquina, o Relay local é necessário para evitar isso e embora você possa usar o pal6 de outras formas a que garante o cumprimento de todas as funções do modelo é esssa, O relay local ele é obrigatório a única parte que muda é o relay de retransmissão que pode ser qualquer coisa. essa solução protege contra o ISP, O próprio servidor de retransmissão e o Serviço requisitado. O ISP ele sabe daonde veio mas não sabe de que máquina veio e nem mesmo quais são os dados ele só sabe que tá indo até um Relay de Retransmissão, o Relay de Retransmissão por sua vez continua do mesmo jeito ele sabe daonde veio e para onde vão os dados mas, não o que tem dentro até chegar no serviço requisitado que só possui o IP do Relay de Retransmissão e não sabe quem você é a menos que esteja logado.
+- O objetivo disto é evitar atrelar a sua máquina, o Relay local é necessário para evitar isso e embora você possa usar o pal6 de outras formas a que garante o cumprimento de todas as funções do modelo é esssa, O relay local ele é obrigatório a única parte que muda é o relay de retransmissão que pode ser qualquer coisa. 
+- Essa solução protege contra o ISP, O próprio servidor de retransmissão e o Serviço requisitado. O ISP ele sabe daonde veio mas não sabe de que máquina veio e nem mesmo quais são os dados ele só sabe que tá indo até um Relay de Retransmissão, o Relay de Retransmissão por sua vez continua do mesmo jeito ele sabe daonde veio e para onde vão os dados mas, não o que tem dentro até chegar no serviço requisitado que só possui o IP do Relay de Retransmissão e não sabe quem você é a menos que esteja logado.
 
 ### (1) “Não é mais fácil subir um VPS com WireGuard e pronto?”
 
