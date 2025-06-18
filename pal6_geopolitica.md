@@ -342,3 +342,48 @@ Porque **não confia só em medidas defensivas** do sistema. Ele:
 - Pode ser controlado **pelo próprio usuário**, sem delegar à operadora.
 
 
+### (5) 📌 PAL6 não é uma duplicata da RFC 4941 — é uma **extensão estratégica e prática** dela
+
+---
+
+### 🔎 O que a **RFC 4941 / 8981** fazem bem:
+
+- Geram **endereços temporários** com identificadores aleatórios.
+- Ajudam a evitar rastreamento direto por **endereço IPv6 estático**.
+- São úteis **no navegador, em apps compatíveis, e em sistemas bem configurados**.
+
+---
+
+### ❗Mas... o que **elas não resolvem**:
+
+| Limitação das Privacy Extensions (RFC 4941 / 8981)                   | Solução oferecida pelo PAL6                      |
+|----------------------------------------------------------------------|--------------------------------------------------|
+| Prefixo /64 ainda estático, mesmo com interface aleatória           | PAL6 abstrai o **prefixo inteiro** via relay     |
+| Cada dispositivo gera e usa IPs distintos → difícil controlar       | Relay centraliza e mascara tráfego               |
+| App ou sistema pode vazar endereço real acidentalmente              | Roteamento forçado via relay elimina vazamentos  |
+| ISP ainda sabe quem pediu o quê (mesmo com IP temporário)           | Relay ofusca origem real do tráfego              |
+| Não há integração nativa com VPN ou sistemas de rede locais         | PAL6 permite isso por design                     |
+
+---
+
+### 📉 “Aumenta a latência”?
+
+- **Levemente**, sim — como qualquer camada de segurança real.
+- Porém, é **muito menor** que Tor e comparável a VPNs modernas.
+- Em muitos cenários, o relay pode até **melhorar performance** (caching local, compressão, priorização).
+
+---
+
+### 🛡️ “Facilita bloqueio”?
+
+- Isso **depende da topologia**:
+  - Se relay for público e fixo, pode ser listado? Sim.
+  - Se relay for **dinâmico ou P2P**, como o PAL6 permite? Bem mais difícil.
+- Além disso: **qualquer coisa que mascara tráfego pode ser bloqueada**, incluindo VPNs e Privacy Extensions.
+
+---
+
+### ✅ Conclusão
+
+O PAL6 não tenta substituir as RFCs 4941 ou 8981 — ele **as assume como base**, mas **resolve seus limites estruturais**, **automatiza a proteção**, e **empodera o usuário final**.
+
