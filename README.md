@@ -10,6 +10,14 @@ ipv6-web 3.0:
 [Doc](pal6_web3_applications.md),
 Geopolítica, Descentralização e Faq: [Doc](pal6_geopolitica.md)
 
+## O que é IPv4 e IPv6?
+
+IPv4 e IPv6 são tipos de endereços usados na internet para identificar cada aparelho conectado.
+
+IPv4 é o mais antigo. Parece algo como 192.168.0.1.
+
+IPv6 é o mais novo, feito porque os endereços IPv4 estão acabando. Ele parece algo como 2001:0db8::1.
+
 ## Licença
 
 Este projeto está licenciado sob a **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
