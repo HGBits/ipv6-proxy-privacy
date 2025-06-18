@@ -8,7 +8,7 @@ ipv6-proxy-privacy:
 ## Outras utilidades para esse modelo.
 ipv6-web 3.0:
 [Doc](pal6_web3_applications.md)
-Geopolítica: [Doc](pal6_geopolitica.md)
+Geopolítica, Descentralização e Faq: [Doc](pal6_geopolitica.md)
 
 ## Licença
 
