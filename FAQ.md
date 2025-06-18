@@ -1,7 +1,7 @@
 ## ❓ FAQ: Dúvidas Comuns e questões relacionadas.
 ### Obs: O pal6 é desenhando para ser usado da seguinte maneira: Dispositivos → Relay Local (Raspberry PI) → Roteador → Servidor de Retransmissão (Relay) → Internet
 
-### e por que é dessa forma?: o objetivo disto é evitar atrelar isso a sua máquina, o Relay local é necessário para evitar isso e embora você possa usar o pal6 de outras formas a que garante o cumprimento de todas as funções do modelo é esssa.
+### e por que é dessa forma?: o objetivo disto é evitar atrelar isso a sua máquina, o Relay local é necessário para evitar isso e embora você possa usar o pal6 de outras formas a que garante o cumprimento de todas as funções do modelo é esssa, O relay local ele é obrigatório a única parte que muda é o relay de retransmissão que pode ser qualquer coisa.
 
 ### (1) “Não é mais fácil subir um VPS com WireGuard e pronto?”
 
