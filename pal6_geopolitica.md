@@ -49,3 +49,21 @@ Entre os formatos possíveis de relay, temos:
 Essa abordagem permite que o PAL6 funcione em redes censuradas, ambientes hostis ou até em zonas de conflito, onde a liberdade de conexão é vital.
 
 Ao **não amarrar o modelo a uma infraestrutura fixa**, o PAL6 **se adapta, sobrevive e escala** em qualquer cenário.
+
+## 🧭 Síntese Conceitual
+
+O PAL6 não é uma substituição ao IPv6 — é uma **forma de retomar o controle sobre ele**.
+
+Na prática, o usuário está utilizando **IPv6 normalmente**, porém com um diferencial fundamental:  
+a conexão **sai primeiro de um dispositivo local** (como um Raspberry Pi, roteador customizado ou qualquer outro relay local) que então a **reencaminha para um relay de saída** configurado pelo próprio usuário.
+
+Este relay, por sua vez, entrega os pacotes ao destino final.  
+O efeito disso é uma rede com as seguintes propriedades:
+
+- Preserva a **anonimidade do IP de origem real**
+- Mantém **compatibilidade total com IPv6**
+- Permite **respostas ponto a ponto (P2P)** rápidas
+- Oferece **controle granular da camada de transporte**
+- Elimina a dependência de **infraestruturas monopolizadas**
+
+> **O resultado:** um IPv6 mais próximo da visão original da internet — descentralizado, transparente e seguro para o usuário final.
