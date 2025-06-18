@@ -156,3 +156,50 @@ O PAL6 **não precisa de uma VPN tradicional** porque já oferece:
 Se você quiser, **pode integrar uma VPN no próprio relay**, tornando-a invisível e opcional.  
 **Você escolhe.**
 
+
+### (3) Diferença entre NAT64 e Prefixo /64 no IPv6
+
+> ⚠️ **Confusão comum:** NAT64 (tradução de protocolos) ≠ Prefixo /64 (segmentação de rede)
+
+---
+
+## 🔁 O que é NAT64?
+
+- NAT64 (Network Address Translation 6 to 4) é uma técnica de **tradução de endereços**.
+- Permite que **clientes IPv6-only se comuniquem com servidores IPv4**.
+- Funciona como uma **ponte entre os dois protocolos**.
+- Usado em:
+  - Firewalls
+  - Proxies
+  - Roteadores de operadoras
+
+### Exemplo prático:
+Você está numa rede 100% IPv6 e quer acessar um site IPv4. O NAT64 intercepta e traduz o tráfego automaticamente.
+
+---
+
+## 🧱 O que é o prefixo /64?
+
+- /64 é uma **notação CIDR** (Classless Inter-Domain Routing) usada para definir **o tamanho de uma sub-rede IPv6**.
+- Um /64 fornece **2⁶⁴ endereços únicos** (cerca de 18 quintilhões).
+- É o tamanho **recomendado pela especificação** para redes locais.
+- Nada tem a ver com tradução de protocolos.
+
+---
+
+## 🧠 Resumo da Diferença
+
+| Termo        | O que faz                                | Onde é usado                        |
+|--------------|-------------------------------------------|-------------------------------------|
+| **NAT64**    | Traduz IPv6 → IPv4                        | Roteadores, proxies, firewalls      |
+| **Prefixo /64** | Define tamanho de uma sub-rede IPv6        | Design e roteamento de redes locais |
+
+---
+
+## ✅ Conclusão
+
+> NAT64 e prefixo /64 são conceitos completamente distintos.  
+> Um trata de **conversão entre protocolos**.  
+> O outro de **estrutura de endereçamento**.
+
+Não confunda! 😉
